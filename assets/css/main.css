@@ -3467,7 +3467,8 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+        /* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
+        background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_6384.jpeg"); 
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3494,7 +3495,9 @@ input, select, textarea {
 
 			#banner {
 				padding: 5em 2em 4.25em 2em ;
-				margin-bottom: -2.5em;
+        margin-bottom: -2.5em;
+        background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_6384_portrait.png"); 
+				background-size: auto,
 			}
 
 				#banner .logo {
@@ -3579,7 +3582,8 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+      /* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
+      background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_6384.jpeg");
 			background-size: auto,
  cover;
 			background-position: center,
@@ -4072,7 +4076,8 @@ input, select, textarea {
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+      /* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
+      /* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/IMG_6384.jpeg"); */
 			background-size: auto,
  cover;
 			background-position: center,
