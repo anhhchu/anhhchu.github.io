@@ -1,8 +1,24 @@
-/*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+// Add Custom Elements to reuse Menu Html template across pages
+class Menu extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <!-- Menu -->
+    <nav id="menu">
+        <div class="inner">
+          <h2>Menu</h2>
+          <ul class="links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="courses.html">Courses & Awards</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+          <a href="#" class="close">Close</a>
+        </div>
+    </nav>
+    `;
+  }
+}
+customElements.define('my-menu', Menu);
 
 (function($) {
 

@@ -1,0 +1,219 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Anh Hoang Chu",
+    "label": "Software Engineer",
+    "email": "anhhchu12@gmail.com",
+    "image": "https://media1.thehungryjpeg.com/thumbs2/ori_3913885_lpreup1cckwha1dq6e1squeo8372m5dqhkj0ia2p_cute-chipmunk-svg-and-png-clipart.jpg",
+    "phone": "(972)-813-9234",
+    "url": "https://anhhchu.github.io/online_portfolio/",
+    "summary": "I'm an ETL Software Developer at Microsoft. I'm passionate about working with data and bringing data insights closer to business users through the help of technology. I have experience in data engineering, big data, data science and backend web development. I’m currently working on ETL data pipeline using Big Data tools, Databases and Data warehouse on GCP and Azure. My tech stacks are Python, SQL, Linux, PySpark, Airflow, Tableau, BigQuery and Dataproc.",
+    "location": {
+      "city": "Dallas",
+      "countryCode": "US",
+      "region": "Texas"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "anhhchu",
+        "url": "https://github.com/anhhchu"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "anhhchu",
+        "url": "https://www.linkedin.com/in/anhhchu/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Walmart Technology",
+      "location": "Bentonville, AR",
+      "description": "Walmart is a Multinational Retail Corporation - Fortune 1 by Revenue",
+      "position": "Software Engineer",
+      "startDate": "2020-01-20",
+      "endDate": "2022-02-11",
+      "summary": "Software Engineer on a product team building an end-to-end analytical Supply Chain web application to track inventory and transportation from Suppliers to Stores for international markets",
+      "highlights": [
+        "Build and maintain ETL data pipeline to calculate KPIs and load analytical datasets to MS SQL Server from multiple data sources in Teradata, Oracle Database and text files using Linux and shell scripts on HDFS",
+        "Lead a team of 4 developers in the enterprise-wide effort to migrate On-prem Data Warehouse (Teradata) to Google Cloud Platform for 10 markets using Big Query, Dataproc, PySpark, Aiflow as a Service on Astronomer",
+        "Continuously deliver new features to the analytics web application by analyzing and calculating supply chain KPIs with advanced SQL queries; as well as engage in data validation and testing processes to ensure data quality",
+        "Improved application performance by 70% with the implementation of caching, indexing and data aggregation in the database instead of in back-end web service, which reduced the volume of data flow through the network.",
+        "Reduced development time by 80% with code refactoring, implement CI/CD and version control (Git/GitHub) in ETL process"
+      ]
+    }, 
+    {
+      "name": "NTT Data Services",
+      "location": "Dallas, Texas",
+      "description": "NTT DATA offers an advanced portfolio of consulting, application, business process, cloud, and infrastructure services to businesses and governments worldwide",
+      "position": "Tableau Systems Support Analyst",
+      "startDate": "2017-10-08",
+      "endDate": "2020-01-16",
+      "summary": "Led a team of 2 Tableau developers in gathering requirements and delivering analytical projects that provide data democratization to the healthcare account IT service team",
+      "highlights": [
+        "Designed and distributed ~50 operations and financial KPI reports to executives and leaders resulting in the reduction of outstanding IT tickets by 70% using Excel, Tableau, SQL Server and Alteryx ",
+        "Reduced time to deliver information to the operations team by 90% with a new reporting process that automates existing ad-hoc reports from Excel into interactive and dynamic dashboards in Tableau "
+      ]
+    },
+    {
+      "name": "E2Open, Inc",
+      "location": "Dallas, Texas",
+      "description": "E2open is a leading network-based provider of 100% cloud-based, mission-critical, end-to-end supply chain management software",
+      "position": "Business Analyst Intern",
+      "startDate": "2017-03-08",
+      "endDate": "2017-08-01",
+      "summary": "Worked with Director of Business Value Delivery to create insights and sales portfolio",
+      "highlights": [
+        "Collected, cleaned, and prepared data from financial reports of 200 companies to calculate 20 different business and supply chain KPIs ranging from Profitability to Efficiency Indicators: Margin, Cash Conversion Cycle, DIO, DSO, DPO",
+        "Developed financial and supply chain KPI dashboards using Excel (VBA), PowerPoint, and QlikView for sales consultants in the USA and EU to leverage the service quality and product offerings to potential and existing clients"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Harrisburg University",
+      "url": "http://www.harrisburgu.edu/",
+      "area": "Computer Science-Scientific Computing",
+      "studyType": "Master",
+      "startDate": "2020-08-26",
+      "endDate": "2022-12-12",
+      "score": "3.6",
+      "courses": [
+        "Scientific Computing I/II",
+        "Data Structure & Algorithm",
+        "Big Data",
+        "Data Mining",
+        "Software Architecture & Microservices"
+      ]
+    },
+    {
+      "institution": "University of Texas at Dallas",
+      "url": "https://www.utdallas.edu/",
+      "area": "Supply Chain Management",
+      "studyType": "Master",
+      "startDate": "2015-08-15",
+      "endDate": "2017-08-17",
+      "score": "3.97",
+      "courses": [
+        "Business Data Warehouse",
+        "Advanced Analytics with SAS I/II",
+        "Operations Management",
+        "Statistics"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Excellence Award",
+      "date": "2022-01-20",
+      "awarder": "Walmart",
+      "summary": "Consistent and examplary demonstration of aspiration with significant contribution to business"
+    },
+    {
+      "title": "Data Scientist NanoDegree",
+      "date": "2021-01-20",
+      "awarder": "Udacity",
+      "summary": "Completed 7 projects about Data Science Techniques, Machine Learning, and Deep Learning using Python"
+    },
+    {
+      "title": "Fourth-place Winner APICS Terra Grande Competition",
+      "date": "2014-04-15",
+      "awarder": "APICS",
+      "summary": "Made decisions in Supply Chain Management, Sales, Purchasing and Operations to maximize ROI for the Fresh Connection Simulation"
+    },
+    {
+      "title": "Third-place Winner Operations Competition",
+      "date": "2016-11-15",
+      "awarder": "Informs UT Dallas",
+      "summary": "Competed with 30 teams from 4 schools in Texas"
+    },
+    {
+      "title": "Dean's List",
+      "date": "2016-07-15",
+      "awarder": "UT Dallas",
+      "summary": "awarded to enrolled continuing graduate students at JSOM who secure 4.0 GPA and demonstrate academic achievements"
+    },
+    {
+      "title": "First-place Winner in 2 Supply Chain Case Competitions",
+      "date": "2016-04-15",
+      "awarder": "UT Dallas Supply Chain Leadership Council",
+      "summary": "Proposed the optimal supply network design to reduce operating expense of a mattress company by 21% while improving service level to 94%. Tool used: Premium Excel Solver"
+    },
+    {
+      "title": "Data Analyst NanoDegree",
+      "date": "2015-08-15",
+      "awarder": "Udacity",
+      "summary": "Completed 7 projects about Data and Business Analytics Tools using Python"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Data Engineering",
+      "level": "Advanced",
+      "keywords": [
+        "Hadoop/PySpark",
+        "Airlow",
+        "Big Query",
+        "Teradata",
+        "MSSQL",
+        "Google Cloud Platform",
+        "Azure Cloud",
+        "Linux/Shell/Vim/Cron"
+      ]
+    },
+    {
+      "name": "Data Analytics/Data Science",
+      "level": "Advanced",
+      "keywords": [
+        "Python",
+        "Machine Learning",
+        "Numpy",
+        "Pandas",
+        "Scikitlearn",
+        "Pytorch",
+        "Tensorflow",
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Beginner",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Ruby on Rails",
+        "Django"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Vietnamese",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Engliesh",
+      "fluency": "Fluent"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Predict Churn for music hosting service with PySpark",
+      "description": "Prediction Engine using Spark DataFrame, Spark SQL, SparkML",
+      "highlights": [
+        "Analyzed customer activities of a music hosting service using Spark Dataframe and Spark SQL on a 247.6 MB dataset running on IBM Watson Studio. Built ML Pipeline with Spark ML to predict churn, and achieved 0.74 F1 score and 0.8 accuracy"
+      ],
+      "keywords": [
+        "PySpark", "Spark Dataframe", "Spark SQL", "SparkML"
+      ],
+      "url": "https://medium.com/@anhchu1291/churn-prediction-for-music-hosting-service-sparkify-5a8d476e5b9b"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}

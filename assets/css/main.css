@@ -3864,7 +3864,7 @@ input, select, textarea {
 				}
 
 				.wrapper.spotlight.style3:after {
-					box-shadow: inset 0 -1px 0 0 #c5c5c5, 0 1px 0 0 #a36fad;
+					box-shadow: inset 0 -1px 0 0 #a36fad, 0 1px 0 0 #a36fad;
 				}
 
 			.wrapper.spotlight.style4 {
