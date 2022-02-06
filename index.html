@@ -1,3 +1,10 @@
+<?php
+if($_POST["message"]) {
+mail("your@email.address", "Here is the subject line",
+$_POST["insert your message here"]. "From: an@email.address");
+}
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -7,7 +14,16 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <!-- <link rel="import" href="reuse_menu.html"> -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.1.0/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-J2WCKfhPxbtZAT+USOoPNCnZVozpAaGtaH/LUcSKXjdCXN85i5fGMTy1Agp8HChK" crossorigin="anonymous"> -->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfC510eAAAAAOUpJjEs5BrEljAvP3R-2LtWdDv3"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfC510eAAAAAOUpJjEs5BrEljAvP3R-2LtWdDv3', {action: 'homepage'})
+            .then(function(token) {
+              document.getElementById('captchaResponse').value = token;
+            });
+          });
+     </script>
 	</head>
 	<body class="is-preload">
 
@@ -32,9 +48,9 @@
               <h2>Hi, My name is 
                 <span style="color:#8F6688; font-weight:bold;">ANH</span>
               </h2>
-              <p> Software Developer | Technologist | Data Lover | Lifelong Learner </p>
+              <p> Software Engineer | Data Lover | Lifelong Learner | Woman in Tech 👩🏻‍💻</p>
             </br>
-              <p><a href="https://registry.jsonresume.org/anhhchu?theme=Kendall" class="special">My Resume</a></p>
+              <p><a href="https://registry.jsonresume.org/anhhchu?theme=Kendall" target="_blank" rel="noopener noreferrer" class="special">My Resume</a></p>
 						</div>
 					</section>
 
@@ -47,9 +63,9 @@
 									<a href="#" class="image"><img src="images/pic01.jpg" alt="Photo by fabio on Unsplash" /></a>
 									<div class="content">
 										<h2 class="major">I'm a 
-                      <span style="color:#39477c; font-weight:bold;">Data Software Developer</span>
+                      <span style="color:#39477c; font-weight:bold;">Software Engineer</span>
                     </h2>
-										<p> I'm a Data Software Developer who is currently working on an analytics web application to help Walmart International Markets track end2end inventory level across different nodes in their massive supply chain. I'm passionate about working with data and bringing data insights closer to business users through the help of technology. I have experience in data engineering, big data, data science and backend web development.</p>
+										<p>I'm a Software Engineer who is passionate about working with data and bringing data insights closer to business users through the help of technology. I have experience in data engineering, big data, data science, back-end databases for web application. I’m currently working on ETL data pipeline using Big Data tools, Databases and Data warehouse on GCP and Azure. My tech stacks are Python, MSSQL, Linux, PySpark, Airflow, Tableau, BigQuery and Dataproc.</p>
 										<a href="#" class="special">What I did</a>
 									</div>
 								</div>
@@ -76,7 +92,7 @@
 									<div class="content">
 										<h2 class="major">I'm a <span style="color:#39477c; font-weight:bold;">Team Player & Leader</span>
                     </h2>
-										<p>Throughout my education and career, I have been members and leaders of a few teams and organizations. At Walmart, I lead a team of 4 developers in the enterprise-wide effort to migrate On-prem Data Warehouse and Hadoop to Google Cloud Platform for our project. At NTT Data, I was the President of Membership in Toastmaster Organization for a year. In college, I was a president of a student organization for 2 years. As a team member and a harmonious leader, I enjoy collaborating and value other people's background and experience in order to achieve common goals.</p>
+										<p>Throughout my education and career, I have been members and leaders of several teams and organizations. At Walmart, I led a team of 4 developers in the enterprise-wide effort to migrate On-prem Data Warehouse to Google Cloud Platform for our application. At NTT Data Services, I was the President of Membership in Toastmaster Organization for a year. In college, I managed a student organization of 10 members for 2 years. As a team member and a harmonious leader, I enjoy collaborating with people from different background and experience in order to achieve common goals.</p>
 										<a href="#" class="special">What Others said about Me</a>
 									</div>
 								</div>
@@ -124,9 +140,9 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
+							<h2 class="major"> <img src="images/wave.gif" width="30px"> Get in touch</h2>
+							<p>If you like/dislike anything about my work, or simply want to talk about Tech over 🧋/ ☕️, please reach out to me for a friendly discussion. I would love to hear from you 😉</p>
+							<form method="post" action="https://getform.io/f/8ad044d2-ba3e-4f60-9d52-053d6e88a7a0">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -142,23 +158,24 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+                  <li><input type="submit" value="Send Message" /></li>
+                  <li><input type="hidden" id="captchaResponse" name="g-recaptcha-response"></li>
 								</ul>
 							</form>
 							<ul class="contact">
 								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
+									Somewhere in Dallas, Texas
 								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands cib-leetcode"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
+								<li class="icon brands fa-linkedin"><a href="#">https://www.linkedin.com/in/anhhchu/</a></li>
+								<li class="icon brands fa-github"><a href="#">https://github.com/anhhchu</a></li>
+              </ul>
+              
 							<ul class="copyright">
-								<li>&copy; Made with 💕&🧋</li>
+                <li>&copy; Made with 💕&🧋</li>
+                <li> 
+                  <a href="https://wakatime.com/badge/github/anhhchu/anhhchu.github.io"><img src="https://wakatime.com/badge/github/anhhchu/anhhchu.github.io.svg" alt="wakatime"></a>
+                </li>
+								
 							</ul>
 						</div>
 					</section>
