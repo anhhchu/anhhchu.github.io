@@ -20,6 +20,20 @@ class Menu extends HTMLElement {
 }
 customElements.define('my-menu', Menu);
 
+class CopyRight extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <ul class="copyright">
+      <li>&copy; Made with 💕&🧋</li>
+      <li> 
+        <a href="https://wakatime.com/badge/github/anhhchu/anhhchu.github.io"><img src="https://wakatime.com/badge/github/anhhchu/anhhchu.github.io.svg" alt="wakatime"></a>
+      </li>
+    </ul>
+    `;
+  }
+}
+customElements.define('my-copyright', CopyRight);
+
 (function($) {
 
 	var	$window = $(window),

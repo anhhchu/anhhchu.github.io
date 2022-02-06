@@ -1,10 +1,3 @@
-<?php
-if($_POST["message"]) {
-mail("your@email.address", "Here is the subject line",
-$_POST["insert your message here"]. "From: an@email.address");
-}
-?>
-
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -12,8 +5,6 @@ $_POST["insert your message here"]. "From: an@email.address");
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- <link rel="import" href="reuse_menu.html"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.1.0/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-J2WCKfhPxbtZAT+USOoPNCnZVozpAaGtaH/LUcSKXjdCXN85i5fGMTy1Agp8HChK" crossorigin="anonymous"> -->
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <script src="https://www.google.com/recaptcha/api.js?render=6LfC510eAAAAAOUpJjEs5BrEljAvP3R-2LtWdDv3"></script>
     <script>
@@ -50,7 +41,7 @@ $_POST["insert your message here"]. "From: an@email.address");
               </h2>
               <p> Software Engineer | Data Lover | Lifelong Learner | Woman in Tech 👩🏻‍💻</p>
             </br>
-              <p><a href="https://registry.jsonresume.org/anhhchu?theme=Kendall" target="_blank" rel="noopener noreferrer" class="special">My Resume</a></p>
+              <p><a href="https://registry.jsonresume.org/anhhchu?theme=Kendall" target="_blank" rel="noopener noreferrer" class="button">My Resume</a></p>
 						</div>
 					</section>
 
@@ -101,8 +92,8 @@ $_POST["insert your message here"]. "From: an@email.address");
 						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
-									<h2 class="major">My Posts</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<h2 class="major">My Portfolio</h2>
+									<p>Check out what I have done over the years</p>
 									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
@@ -141,16 +132,19 @@ $_POST["insert your message here"]. "From: an@email.address");
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major"> <img src="images/wave.gif" width="30px"> Get in touch</h2>
-							<p>If you like/dislike anything about my work, or simply want to talk about Tech over 🧋/ ☕️, please reach out to me for a friendly discussion. I would love to hear from you 😉</p>
-							<form method="post" action="https://getform.io/f/8ad044d2-ba3e-4f60-9d52-053d6e88a7a0">
+              <p>
+                Want to chat about collaboration opportunities over 🧋/ ☕️? <br>
+                Please reach out to me for a friendly discussion. I would love to hear from you 😉
+              </p>
+							<form id='myForm' method="post" action="https://getform.io/f/8ad044d2-ba3e-4f60-9d52-053d6e88a7a0">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" required/>
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
+										<input type="email" name="email" id="email" required/>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
@@ -161,22 +155,16 @@ $_POST["insert your message here"]. "From: an@email.address");
                   <li><input type="submit" value="Send Message" /></li>
                   <li><input type="hidden" id="captchaResponse" name="g-recaptcha-response"></li>
 								</ul>
-							</form>
+              </form>
+    
 							<ul class="contact">
-								<li class="icon solid fa-home">
-									Somewhere in Dallas, Texas
-								</li>
-								<li class="icon brands fa-linkedin"><a href="#">https://www.linkedin.com/in/anhhchu/</a></li>
-								<li class="icon brands fa-github"><a href="#">https://github.com/anhhchu</a></li>
+								<li class="icon solid fa-home">Somewhere in Dallas, Texas</li>
+								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/anhhchu/"></a>https://www.linkedin.com/in/anhhchu/</li>
+                <li class="icon brands fa-github"><a href="https://github.com/anhhchu"></a>https://github.com/anhhchu</li>
               </ul>
-              
-							<ul class="copyright">
-                <li>&copy; Made with 💕&🧋</li>
-                <li> 
-                  <a href="https://wakatime.com/badge/github/anhhchu/anhhchu.github.io"><img src="https://wakatime.com/badge/github/anhhchu/anhhchu.github.io.svg" alt="wakatime"></a>
-                </li>
-								
-							</ul>
+            
+            <my-copyright></my-copyright>
+
 						</div>
 					</section>
 
@@ -188,7 +176,16 @@ $_POST["insert your message here"]. "From: an@email.address");
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="https://www.google.com/recaptcha/api.js?render=6LfC510eAAAAAOUpJjEs5BrEljAvP3R-2LtWdDv3"></script>
+      <script>
+          grecaptcha.ready(function() {
+              grecaptcha.execute('6LfC510eAAAAAOUpJjEs5BrEljAvP3R-2LtWdDv3', {action: 'homepage'})
+              .then(function(token) {
+                document.getElementById('captchaResponse').value = token;
+              });
+            });
+      </script>
 
 	</body>
 </html>

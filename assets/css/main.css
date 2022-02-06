@@ -2268,7 +2268,7 @@ input, select, textarea {
 		input[type="radio"] + label {
 			text-decoration: none;
 			color: #ffffff;
-			cursor: pointer;
+			cursor: url("images/a-nut.png"), auto;
 			display: inline-block;
 			font-size: 1em;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -2522,7 +2522,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		cursor: default;
+		cursor: url("images/a-nut.png"), auto;
 		list-style: none;
 		margin-left: -1em;
 		padding-left: 0;
@@ -2530,7 +2530,8 @@ input, select, textarea {
 
 		ul.actions li {
 			padding: 0 0 0 1em;
-			vertical-align: middle;
+      vertical-align: middle;
+      
 		}
 
 		ul.actions.special {
@@ -2539,7 +2540,8 @@ input, select, textarea {
 			-ms-justify-content: center;
 			justify-content: center;
 			width: 100%;
-			margin-left: 0;
+      margin-left: 0;
+      cursor: url("images/a-nut.png"), auto;
 		}
 
 			ul.actions.special li:first-child {
@@ -2640,7 +2642,7 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
-		cursor: default;
+		cursor: url("images/chipmunk-cursor.png"), auto;
 		list-style: none;
 		padding-left: 0;
 	}
@@ -2714,7 +2716,7 @@ input, select, textarea {
 /* Pagination */
 
 	ul.pagination {
-		cursor: default;
+		cursor: url("images/a-nut.png"), auto;
 		list-style: none;
 		padding-left: 0;
 	}
@@ -2869,7 +2871,7 @@ input, select, textarea {
 		border: 0;
 		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
 		color: #ffffff !important;
-		cursor: pointer;
+		cursor: url("images/a-nut.png"), auto;
 		display: inline-block;
 		font-family: Raleway, Helvetica, sans-serif;
 		font-size: 0.8em;
@@ -3006,7 +3008,8 @@ input, select, textarea {
 
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
-			background-color: #353849;
+      /* background-color: #353849; */
+      background-color: #282b38; 
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
@@ -3260,7 +3263,7 @@ input, select, textarea {
 		user-select: none;
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 		background: rgba(46, 49, 65, 0.8);
-		cursor: default;
+		cursor: url("images/a-nut.png"), auto;
 		height: 100%;
 		left: 0;
 		opacity: 0;
@@ -3281,7 +3284,8 @@ input, select, textarea {
 			-webkit-transition: opacity 0.35s ease, -webkit-transform 0.35s ease;
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
-			-webkit-overflow-scrolling: touch;
+      -webkit-overflow-scrolling: touch;
+      cursor: url("images/a-nut.png"), auto;
 			background: #4c5c96;
 			border-radius: 5px;
 			display: block;
@@ -3379,12 +3383,14 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+    padding: 10em 0 4.75em 0 ;
+    cursor: url("images/chipmunk-cursor.png"), auto;
 	}
 
 		#banner .inner {
 			margin: 0 auto;
-			width: 55em;
+      width: 55em;
+      cursor: url("images/chipmunk-cursor.png"), auto;
 		}
 
 		#banner .logo {
@@ -3403,7 +3409,8 @@ input, select, textarea {
 			#banner .logo .icon {
 				border-radius: 100%;
 				border: solid 2px rgba(255, 255, 255, 0.125);
-				cursor: default;
+        /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto; */
+        cursor: url("images/chipmunk-cursor.png"), auto;
 				display: inline-block;
 				font-size: 2em;
 				height: 2.25em;
@@ -3630,22 +3637,22 @@ input, select, textarea {
 	}
 
 	.wrapper {
-		background-color: #2e3141;
+		background-color: rgb(46, 49, 65, 0.8);
 		margin: 6.5em 0;
 		position: relative;
 	}
 
 		.wrapper:before, .wrapper:after {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141%3B' /%3E%3C/svg%3E");
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141CC%3B' /%3E%3C/svg%3E");
 		}
 
-		.wrapper:before {
-			box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+		/* .wrapper:before {
+			box-shadow: inset 0 -1px 0 0 rgb(46, 49, 65,0.5), 0 0px 0 0 rgb(46, 49, 65,0.5);
 		}
 
 		.wrapper:after {
-			box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
-		}
+			box-shadow: inset 0 -1px 0 0 rgb(46, 49, 65,0.5), 0 0px 0 0 rgb(46, 49, 65,0.5);
+		} */
 
 		.wrapper:before, .wrapper:after {
 			background-repeat: no-repeat;
