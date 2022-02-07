@@ -8,7 +8,6 @@ class Menu extends HTMLElement {
           <h2>Menu</h2>
           <ul class="links">
             <li><a href="index.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
             <li><a href="courses.html">Courses & Awards</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
           </ul>
