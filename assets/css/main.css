@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
 
-/*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -251,13 +246,22 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1 {
 		color: #ffffff;
 		font-family: Raleway, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
+  }
+  
+  h2, h3, h4, h5, h6 {
+		color: #ffffff;
+		font-family: Raleway, Helvetica, sans-serif;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		margin: 0 0 1em 0;
+		/* text-transform: lowercase; */
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -3499,7 +3503,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+      body {
+        background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); 
+      }
 			#banner {
 				padding: 5em 2em 4.25em 2em ;
         margin-bottom: -2.5em;
@@ -4176,12 +4182,14 @@ input, select, textarea {
 
   .timeline {
     box-sizing: border-box;
+    
   }
 
-  .timeline {
-    /* background-color: #b74e91; */
+  /* .timeline{
+    background-color: rgb(46, 49, 65, 0.8);
+    padding: 3em 3em 1em 3em ;
     font-family: Helvetica, sans-serif;
-  }
+  } */
 
   /* The actual timeline (the vertical ruler) */
   .timeline {
@@ -4206,7 +4214,7 @@ input, select, textarea {
   .container {
     padding: 10px 40px;
     position: relative;
-    background-color: inherit;
+    /* background-color: inherit; */
     width: 50%;
   }
 
@@ -4273,12 +4281,12 @@ input, select, textarea {
   }
 
   /* The actual content */
-  /* .content {
+  .timeline-content {
     padding: 20px 30px;
     /* background-color: white; */
     position: relative;
     border-radius: 6px;
-  } */
+  }
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {

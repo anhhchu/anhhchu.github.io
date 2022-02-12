@@ -8,8 +8,7 @@ class Menu extends HTMLElement {
           <h2>Menu</h2>
           <ul class="links">
             <li><a href="index.html">About Me</a></li>
-            <li><a href="education.html">Certifications & Awards</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
+            
           </ul>
           <a href="#" class="close">Close</a>
         </div>
@@ -17,6 +16,8 @@ class Menu extends HTMLElement {
     `;
   }
 }
+{/* <li><a href="education.html">Certifications & Awards</a></li>
+<li><a href="testimonials.html">Testimonials</a></li> */}
 customElements.define('my-menu', Menu);
 
 class CopyRight extends HTMLElement {
@@ -32,6 +33,22 @@ class CopyRight extends HTMLElement {
   }
 }
 customElements.define('my-copyright', CopyRight);
+
+class Header extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <!-- Header -->
+    <header id="header" class="alt">
+      <h1><a href="#">Chipmunk❤️DEV</a></h1>
+      <nav>
+        <a href="#menu">Menu</a>
+      </nav>
+    </header>
+    `;
+  }
+}
+customElements.define('my-header', Header);
+
 
 (function($) {
 

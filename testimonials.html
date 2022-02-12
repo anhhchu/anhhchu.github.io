@@ -5,12 +5,22 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Generic - Solid State by HTML5 UP</title>
+  <head>
+    <title>Chipmunk❤️DEV</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfC510eAAAAAOUpJjEs5BrEljAvP3R-2LtWdDv3"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfC510eAAAAAOUpJjEs5BrEljAvP3R-2LtWdDv3', {action: 'homepage'})
+            .then(function(token) {
+              document.getElementById('captchaResponse').value = token;
+            });
+          });
+     </script>
 	</head>
 	<body class="is-preload">
 
@@ -18,12 +28,7 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Solid State</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <my-header></my-header>
 
 				<!-- Menu -->
         <my-menu></my-menu>

@@ -1,24 +1,29 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-      <title>Chipmunk❤️DEV</title>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-      <link rel="stylesheet" href="assets/css/main.css" />
-      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  </head>
+	<head>
+    <title>Chipmunk❤️DEV</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfC510eAAAAAOUpJjEs5BrEljAvP3R-2LtWdDv3"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfC510eAAAAAOUpJjEs5BrEljAvP3R-2LtWdDv3', {action: 'homepage'})
+            .then(function(token) {
+              document.getElementById('captchaResponse').value = token;
+            });
+          });
+     </script>
+	</head>
 	<body class="is-preload">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Chipmunk❤️DEV</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <my-header></my-header>
 
 				<!-- Menu -->
         <my-menu></my-menu>
