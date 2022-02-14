@@ -4,7 +4,7 @@
 
 2. Contact Form integrated with `Getform.io`
 
-3. Animations & Design with `Canva`
+3. Animations & Design with `Canva`, [Animation on Scroll (AOS) Library by Michalsnik](https://github.com/michalsnik/aos)
 
 4. Images from talented photographers on `Unsplash`
 
