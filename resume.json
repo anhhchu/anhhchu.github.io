@@ -2,70 +2,87 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Anh Hoang Chu",
-    "label": "Software Engineer",
-    "email": "anhhchu12@gmail.com",
-    "image": "https://media1.thehungryjpeg.com/thumbs2/ori_3913885_lpreup1cckwha1dq6e1squeo8372m5dqhkj0ia2p_cute-chipmunk-svg-and-png-clipart.jpg",
+    "label": "Software Engineer at Microsoft",
+    "image": "https://media-exp1.licdn.com/dms/image/C4E03AQFRmIn0HRcePw/profile-displayphoto-shrink_100_100/0/1645065888670?e=1650499200&v=beta&t=R61PhHq8V2eu7jhB8jep39XZx5bc9uw6wtM7xBqtIbM",
     "phone": "(972)-813-9234",
-    "url": "https://anhhchu.github.io/online_portfolio/",
-    "summary": "I'm an ETL Software Developer at Microsoft. I'm passionate about working with data and bringing data insights closer to business users through the help of technology. I have experience in data engineering, big data, data science and backend web development. I’m currently working on ETL data pipeline using Big Data tools, Databases and Data warehouse on GCP and Azure. My tech stacks are Python, SQL, Linux, PySpark, Airflow, Tableau, BigQuery and Dataproc.",
+    "email": "anhhchu12@gmail.com",
+    "url": "https://anhhchu.github.io/",
+    "summary": "I'm a Software Engineer who is passionate about working with data and bringing data insights closer to business users through the help of technology. I have experience in data engineering, big data, data science, data warehouse, back-end databases for web application on GCP, Azure and AWS. My tech stacks are Python, SQL, Linux, PySpark, Kafka, Airflow, Tableau, Kubernetes, BigQuery, Redshift, and Azure Synapse Analytics",
     "location": {
-      "city": "Dallas",
+      "city": "Redmond",
       "countryCode": "US",
-      "region": "Texas"
+      "region": "Washington"
     },
     "profiles": [
       {
+        "network": "Website",
+        "username": "anhhchu.github.io",
+        "url": "https://anhhchu.github.io/"
+      },
+      {
         "network": "Github",
-        "username": "anhhchu",
+        "username": "github.com/anhhchu",
         "url": "https://github.com/anhhchu"
       },
       {
         "network": "LinkedIn",
-        "username": "anhhchu",
+        "username": "inkedin.com/in/anhhchu",
         "url": "https://www.linkedin.com/in/anhhchu/"
       }
     ]
   },
   "work": [
     {
+      "name": "Microsoft",
+      "location": "Redmond, Seattle",
+      "description": "Microsoft Corporation is an American multinational technology corporation - the world 3rd largest compary by Market Cap",
+      "position": "Software Engineer",
+      "startDate": "2022-02-14",
+      "summary": "Software Engineer building, configuring, and managing back-end infrastructure for Flipgrid, a video-powered social-learning platform",
+      "highlights": [
+        "Ensure highly available and performant application by maintaining a multitude of Azure and AWS cloud services include Kubernetes, storage, database, data warehouse, content delivery network, monitoring, elastic searching and caching",
+        "Build and maintain data lakehouse platform using Kafka streaming service, Azure PostgreSQL Citus Hyperscale, Azure EventHub, and Azure Synapse Analytics"
+      ]
+    },
+    {
       "name": "Walmart Technology",
       "location": "Bentonville, AR",
       "description": "Walmart is a Multinational Retail Corporation - Fortune 1 by Revenue",
       "position": "Software Engineer",
       "startDate": "2020-01-20",
-      "endDate": "2022-02-11",
-      "summary": "Software Engineer on a product team building an end-to-end analytical Supply Chain web application to track inventory and transportation from Suppliers to Stores for international markets",
+      "endDate": "2022-02-12",
+      "summary": "Software Engineer building an end-to-end analytical Supply Chain web application to track inventory and transportation from Suppliers to Stores for international markets",
       "highlights": [
-        "Build and maintain ETL data pipeline to calculate KPIs and load analytical datasets to MS SQL Server from multiple data sources in Teradata, Oracle Database and text files using Linux and shell scripts on HDFS",
-        "Lead a team of 4 developers in the enterprise-wide effort to migrate On-prem Data Warehouse (Teradata) to Google Cloud Platform for 10 markets using Big Query, Dataproc, PySpark, Aiflow as a Service on Astronomer",
-        "Continuously deliver new features to the analytics web application by analyzing and calculating supply chain KPIs with advanced SQL queries; as well as engage in data validation and testing processes to ensure data quality",
+        "Built and maintained ETL data pipeline to calculate KPIs and load analytical datasets to MSSQL from multiple data sources in Teradata, BigQuery, Oracle Database, Informix Database and flat files using Linux shell scripts, Vim and Cron",
+        "Led a team of 4 developers in the enterprise-wide effort to migrate On-prem Data Warehouse (Teradata) to Google Cloud Platform for 10 markets using Big Query, Dataproc, PySpark, and Aiflow as a Service on Astronomer",
+        "Continuously delivered new data features and KPIs to the analytics web application by analyzing and calculating supply chain metrics with advanced queries, Spark SQL and Spark Dataframe for data transformation; as well as perform data validation and unit testing to ensure data quality",
         "Improved application performance by 70% with the implementation of caching, indexing and data aggregation in the database instead of in back-end web service, which reduced the volume of data flow through the network.",
-        "Reduced development time by 80% with code refactoring, implement CI/CD and version control (Git/GitHub) in ETL process"
+        "Reduced development time and codebase complexity by 80% with code refactoring, SQL reformating, CI/CD pipeline and version control (Git/GitHub) in ETL process"
       ]
     }, 
     {
       "name": "NTT Data Services",
       "location": "Dallas, Texas",
-      "description": "NTT DATA offers an advanced portfolio of consulting, application, business process, cloud, and infrastructure services to businesses and governments worldwide",
+      "description": "NTT DATA is a multinational IT consulting corporation",
       "position": "Tableau Systems Support Analyst",
       "startDate": "2017-10-08",
       "endDate": "2020-01-16",
       "summary": "Led a team of 2 Tableau developers in gathering requirements and delivering analytical projects that provide data democratization to the healthcare account IT service team",
       "highlights": [
         "Designed and distributed ~50 operations and financial KPI reports to executives and leaders resulting in the reduction of outstanding IT tickets by 70% using Excel, Tableau, SQL Server and Alteryx ",
-        "Reduced time to deliver information to the operations team by 90% with a new reporting process that automates existing ad-hoc reports from Excel into interactive and dynamic dashboards in Tableau "
+        "Reduced time to deliver data insights to the operations team by 90% with a new reporting process that automates existing ad-hoc reports from Excel into interactive and dynamic dashboards in Tableau "
       ]
     },
     {
       "name": "E2Open, Inc",
       "location": "Dallas, Texas",
-      "description": "E2open is a leading network-based provider of 100% cloud-based, mission-critical, end-to-end supply chain management software",
+      "description": "E2open is a leading network-based provider of cloud-based, end-to-end supply chain management software",
       "position": "Business Analyst Intern",
       "startDate": "2017-03-08",
       "endDate": "2017-08-01",
-      "summary": "Worked with Director of Business Value Delivery to create insights and sales portfolio",
+      "summary": "Worked with Director of Business Value Delivery to create business insights and sales portfolio through operations and financial KPIs",
       "highlights": [
-        "Collected, cleaned, and prepared data from financial reports of 200 companies to calculate 20 different business and supply chain KPIs ranging from Profitability to Efficiency Indicators: Margin, Cash Conversion Cycle, DIO, DSO, DPO",
+        "Collected, cleaned, and prepared data from financial reports of 200 companies to calculate 20 different business and supply chain KPIs ranging from Profitability to Efficiency Indicators: Profits Margin, Cash Conversion Cycle, DIO (Days Inventory Outstanding), DSO (Days Sales Outstanding), DPO (Days Payable Outstanding), etc.",
         "Developed financial and supply chain KPI dashboards using Excel (VBA), PowerPoint, and QlikView for sales consultants in the USA and EU to leverage the service quality and product offerings to potential and existing clients"
       ]
     }
@@ -78,13 +95,31 @@
       "studyType": "Master",
       "startDate": "2020-08-26",
       "endDate": "2022-12-12",
-      "score": "3.6",
+      "score": "3.75",
       "courses": [
-        "Scientific Computing I/II",
+        "Scientific Computing",
         "Data Structure & Algorithm",
-        "Big Data",
-        "Data Mining",
-        "Software Architecture & Microservices"
+        "Big Data Architecture",
+        "Data Engineering & Mining",
+        "Software Architecture & Microservices",
+        "Theory of Computation"
+      ]
+    },
+    {
+      "institution": "Udacity",
+      "url": "https://confirm.udacity.com/Q5EMKLQD",
+      "area": "Data Scientist NanoDegree",
+      "studyType": "Certification",
+      "startDate": "2019-08-15",
+      "endDate": "2020-02-02",
+      "courses": [
+        "Supervised Learning",
+        "Deep Learning",
+        "Unsupervised Learning",
+        "Software Engineer for Data Scientist",
+        "Data Engineering",
+        "Experiment Design & Recommendation",
+        "Data Science with Big Data"
       ]
     },
     {
@@ -99,7 +134,24 @@
         "Business Data Warehouse",
         "Advanced Analytics with SAS I/II",
         "Operations Management",
-        "Statistics"
+        "Statistics",
+        "Prescriptive Analytics"
+      ]
+    },
+    {
+      "institution": "Udacity",
+      "url": "https://confirm.udacity.com/D3UGCKHH",
+      "area": "Data Analyst NanoDegree",
+      "studyType": "Certification",
+      "startDate": "2015-07-15",
+      "endDate": "2016-01-26",
+      "courses": [
+        "Descriptive & Inferential Statistics",
+        "Intro to Data Analysis",
+        "Data Wrangling",
+        "Intro to Machine Learning",
+        "Data Visualization in Tableau",
+        "Matrix Maths & Numpy with Python"
       ]
     }
   ],
@@ -111,40 +163,34 @@
       "summary": "Consistent and examplary demonstration of aspiration with significant contribution to business"
     },
     {
-      "title": "Data Scientist NanoDegree",
-      "date": "2021-01-20",
-      "awarder": "Udacity",
-      "summary": "Completed 7 projects about Data Science Techniques, Machine Learning, and Deep Learning using Python"
-    },
-    {
       "title": "Fourth-place Winner APICS Terra Grande Competition",
-      "date": "2014-04-15",
-      "awarder": "APICS",
-      "summary": "Made decisions in Supply Chain Management, Sales, Purchasing and Operations to maximize ROI for the Fresh Connection Simulation"
+      "date": "2017-04-15",
+      "awarder": "APICS Houston",
+      "summary": "Competed with teams from UT Dallas, UT Arlington, Texas A&M, University of Houston in the Fresh Connection Simulation Competition"
     },
     {
       "title": "Third-place Winner Operations Competition",
       "date": "2016-11-15",
-      "awarder": "Informs UT Dallas",
-      "summary": "Competed with 30 teams from 4 schools in Texas"
+      "awarder": "Informs, UT Dallas",
+      "summary": "Forecasted 2-year demand for a small business with Holt-Winters and ARIMA method using R. Competed with 30 teams from 4 schools in Texas"
     },
     {
       "title": "Dean's List",
       "date": "2016-07-15",
       "awarder": "UT Dallas",
-      "summary": "awarded to enrolled continuing graduate students at JSOM who secure 4.0 GPA and demonstrate academic achievements"
+      "summary": "Demonstrated academic achievements through GPA and competitions"
     },
     {
       "title": "First-place Winner in 2 Supply Chain Case Competitions",
       "date": "2016-04-15",
-      "awarder": "UT Dallas Supply Chain Leadership Council",
-      "summary": "Proposed the optimal supply network design to reduce operating expense of a mattress company by 21% while improving service level to 94%. Tool used: Premium Excel Solver"
+      "awarder": "Supply Chain Leadership Council, UT Dallas",
+      "summary": "Proposed the optimal supply network design to reduce operating expense of a mattress company by 21% while improving service level to 94%. Competed with 20 teams from UT Dallas, SMU, UT Arlington"
     },
     {
-      "title": "Data Analyst NanoDegree",
-      "date": "2015-08-15",
-      "awarder": "Udacity",
-      "summary": "Completed 7 projects about Data and Business Analytics Tools using Python"
+      "title": "Hero Horse Award",
+      "date": "2016-04-15",
+      "awarder": "Hong Kong Shanghai Banking Corporation (HSBC) Vietnam",
+      "summary": "Awarded to the top sales and service associates with best sale results quarterly"
     }
   ],
   "skills": [
@@ -152,14 +198,15 @@
       "name": "Data Engineering",
       "level": "Advanced",
       "keywords": [
+        "Linux/Shell/Vim/Cron",
         "Hadoop/PySpark",
         "Airlow",
-        "Big Query",
-        "Teradata",
-        "MSSQL",
         "Google Cloud Platform",
         "Azure Cloud",
-        "Linux/Shell/Vim/Cron"
+        "Big Query",
+        "DataProc",
+        "Teradata",
+        "MSSQL"
       ]
     },
     {
@@ -167,13 +214,16 @@
       "level": "Advanced",
       "keywords": [
         "Python",
+        "Tableau",
         "Machine Learning",
         "Numpy",
         "Pandas",
         "Scikitlearn",
         "Pytorch",
         "Tensorflow",
-        "Jupyter Notebook"
+        "Jupyter Notebook",
+        "Excel Solver",
+        "Excel Analysis Toolpak"
       ]
     },
     {
@@ -183,6 +233,7 @@
         "HTML",
         "CSS",
         "Javascript",
+        "Jekyll",
         "Ruby on Rails",
         "Django"
       ]
@@ -198,20 +249,8 @@
       "fluency": "Fluent"
     }
   ],
-  "projects": [
-    {
-      "name": "Predict Churn for music hosting service with PySpark",
-      "description": "Prediction Engine using Spark DataFrame, Spark SQL, SparkML",
-      "highlights": [
-        "Analyzed customer activities of a music hosting service using Spark Dataframe and Spark SQL on a 247.6 MB dataset running on IBM Watson Studio. Built ML Pipeline with Spark ML to predict churn, and achieved 0.74 F1 score and 0.8 accuracy"
-      ],
-      "keywords": [
-        "PySpark", "Spark Dataframe", "Spark SQL", "SparkML"
-      ],
-      "url": "https://medium.com/@anhchu1291/churn-prediction-for-music-hosting-service-sparkify-5a8d476e5b9b"
-    }
-  ],
   "meta": {
+    "theme": "Autumn",
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
     "lastModified": "2017-12-24T15:53:00"
