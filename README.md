@@ -1,4 +1,4 @@
-# Website for Chipmunk❤️DEV
+# deprecate Website for Chipmunk❤️DEV
 
 1. Theme `Solid State` from talented designer on [HTML5 UP](https://html5up.net/)
 
